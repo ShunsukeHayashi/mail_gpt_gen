@@ -7,8 +7,17 @@
 # 執筆する内容
 {{ user_request }}
 
+{% if additional_info %}
+# 追加オプション
+{% if additional_info.recipient %}- 宛先: {{ additional_info.recipient }}{% endif %}
+- フォーマリティレベル: {{ additional_info.formality }}（1=カジュアル、5=非常に丁寧）
+- 長さ: {{ additional_info.length }}
+{% endif %}
+
 # 指示
 - 上記の文体ルールに忠実に従ってください
 - 一般的なメールの体裁（宛先、挨拶、本文、締め、署名など）を整えてください
 - 長さは適切で、読みやすく自然な文章にしてください
 - 文体のルールを遵守しながらも、文脈に合わせて自然な表現を心がけてください
+- メールの目的や要点を明確に伝えてください
+- 丁寧さと簡潔さのバランスを保ってください
