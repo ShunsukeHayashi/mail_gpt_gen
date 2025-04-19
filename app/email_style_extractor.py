@@ -20,15 +20,19 @@ st.set_page_config(
 # カスタムCSS
 st.markdown("""
 <style>
-    .main-header {color: #1E88E5; font-size: 2.5rem !important; font-weight: 700; margin-bottom: 1rem;}
-    .sub-header {color: #0D47A1; font-size: 1.8rem !important; font-weight: 600; margin-top: 1rem;}
-    .info-text {font-size: 1.1rem; color: #424242;}
-    .highlight {background-color: #E3F2FD; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;}
-    .success-box {background-color: #E8F5E9; padding: 1rem; border-radius: 0.5rem; border-left: 5px solid #4CAF50;}
-    .info-box {background-color: #E1F5FE; padding: 1rem; border-radius: 0.5rem; border-left: 5px solid #03A9F4;}
-    .btn-custom {background-color: #1E88E5 !important; color: white !important; font-weight: 600 !important;}
-    .footer {font-size: 0.8rem; color: #757575; text-align: center; margin-top: 2rem;}
-    .card {background-color: white; border-radius: 0.5rem; padding: 1.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    .main-header {color: #000000; font-size: 2.5rem !important; font-weight: 700; margin-bottom: 1rem;}
+    .sub-header {color: #333333; font-size: 1.8rem !important; font-weight: 600; margin-top: 1rem;}
+    .info-text {font-size: 1.1rem; color: #000000;}
+    .highlight {background-color: #f0f0f0; padding: 1rem; border-radius: 0.5rem; margin: 1rem 0;}
+    .success-box {background-color: #f0f0f0; padding: 1rem; border-radius: 0.5rem; border-left: 5px solid #333333;}
+    .info-box {background-color: #f5f5f5; padding: 1rem; border-radius: 0.5rem; border-left: 5px solid #555555;}
+    .btn-custom {background-color: #333333 !important; color: white !important; font-weight: 600 !important;}
+    .footer {font-size: 0.8rem; color: #333333; text-align: center; margin-top: 2rem;}
+    .card {background-color: #f9f9f9; border-radius: 0.5rem; padding: 1.5rem; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    code {font-family: 'Courier New', monospace !important;}
+    pre {background-color: #f5f5f5; padding: 0.5rem; border-radius: 0.3rem;}
+    li {margin-bottom: 0.5rem;}
+    textarea, input {font-family: 'Courier New', monospace !important;}
 </style>
 """, unsafe_allow_html=True)
 
