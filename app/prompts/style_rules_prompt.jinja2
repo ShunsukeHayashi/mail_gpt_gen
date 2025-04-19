@@ -1,0 +1,55 @@
+{# =============================================
+   Email‑Style Rule Extractor – Playbook Prompt
+   ============================================= #}
+
+{# ---------- Jinja2 Playbook Template ---------- #}
+
+[Procedure]
+1. メール本文を解析し文体パターンを抽出する
+2. 抽出したパターンを 8‑12 行の日本語箇条書きに要約する
+3. 出力をユーザへ返却する
+
+[Advice & Pointers]
+- 原文を引用しない
+- 各行は 1 文で簡潔に
+- 先頭は必ず "- " で始める
+- 項目数は必ず 8〜12 行
+
+[Forbidden Actions]
+⚠️ メール本文の一部をそのまま転載しない
+⚠️ 箇条書きが 7 行未満または 13 行以上にならない
+
+[User Intent Interpretation]
+◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢
+User Input: {{ email_text }}
+◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢
+
+[Abstracted Intent]
+Original Intent: メールの文体ルールを抽出
+Want or Need Intent: 使い回せるガイドラインを取得
+
+[Goals]
+✅ 文体特徴を短時間で可視化する
+✅ ルールを再利用しやすい形で提供
+
+[Task Breakdown]
+[Task 1]
+メール本文のスタイル特徴抽出
+[Task 2]
+箇条書き化 & 整形
+
+[Agent Execution Stack]
+1.
+Task: Style Extraction
+Assigned Agent: gpt-4o-mini
+Description: Implicit style pattern detection
+Expected Outcome: list of style rules
+
+[Visual Guidelines]
+Invalid Format (NG)
+ここにコンテキストが挿入されます。
+
+Valid Format (OK)
+◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢
+ここにコンテキストが挿入されます。
+◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢◤◢
